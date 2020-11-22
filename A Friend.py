@@ -1,15 +1,4 @@
-print("Hii....")
-print("What is your name?")
-#myName = input()
-#print("Nice to meet you " + myName)
-print("From where do you belong?")
-#cameFrom = input()
-#print("OH! my mom is also from " + cameFrom + ".")
-print ("what type of games do you play in this Quarantine period.")
-print("online/offline")
-print("Plz enter in the format used above:")
-games = ("XYz") 
-def function:
+def fun():
     if(games == 'online'):
         print("My mom says that children shouldn't play online games.")
         print("you shouldn't also play online games.")
@@ -38,11 +27,25 @@ def function:
     else:
         print("Invalid format used please restart the game")
 
-while((games != "online") or "offline"):
-    #print("Plz try again and enter in valid format")
+print("Hii....")
+print("What is your name?")
+myName = input()
+print("Nice to meet you " + myName)
+print("From where do you belong?")
+cameFrom = input()
+print("OH! my mom is also from " + cameFrom + ".")
+print ("what type of games do you play in this Quarantine period.")
+print("online/offline")
+print("Plz enter in the format used above:")
+while(1):
     games = input()
-    print("Ok Byeee....")
+    if (games == "online" or games == "offline"):
+        fun()
+        break
+    else:
+        print("Plz enter in the valid format mentioned above")
+
+print("Ok Byeee....")
 print("See you later, Alligator")
 print('press any key to exit')
 ExIt = input()
-
